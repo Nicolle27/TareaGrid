@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+html {
+    height: 100%;
+}
+.grid-container>* {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.header {
+    grid-area: header;
+    background-color: #3878c0;
+}
+.navbar {
+    grid-area: navbar;
+    background-color: #46af46;
+}
+.main {
+    grid-area: main;
+    background-color: #f3f3f3;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: #d27c7c;
+}
+.footer {
+    grid-area: footer;
+    background-color: #707e8c;
+}
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "sidebar"
+        "footer";
+}
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: 750px auto;
+        grid-template-rows: 60px 60px auto 500px;
+        grid-template-areas:
+            "header header"
+            "navbar navbar"
+            "sidebar main"
+            "sidebar main"
+            "footer footer";
+    }
+}
+.div1 {
+    background-color: #fdcfcf;
+    padding: 80px;
+    margin: 20px;
+}
+.div2 {
+    background-color: #fdcfcf;
+    padding: 80px;
+    margin: 20px;
+}   
+.div3 {
+    background-color: #fdcfcf;
+    padding: 80px;
+    margin: 20px;
+}
